@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* Font & Icon */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+/* Bootstrap & Scss */
+/*
+[移除掉所有圓角]
+Bootstrap 的元件樣式預設帶有圓角，由於第六週設計稿的樣式，幾乎是沒有圓角的。
+所以可以先將樣式都調整為無圓角。
+
+該設定變數名稱是 $enable-rounded。
+
+只要改為 false 之後就可以移除掉預設的圓角囉。
+*/
+/*
+[修改間距設定（.mb-1, .pt-2…）]
+搜尋 $spacers 則可以來到調整間距的地方。
+
+建議同學可以先觀察設計稿的元素間距會有那些數值，然後來設定間距的數值。
+*/
+/*$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;*/
+/*
+[移除 a 連結底線]
+設計稿中的 a 連結也是幾乎沒有底線的，所以我們也可以移除底線。
+*/
+/*
+[移除標題標籤或 p 標籤預設的 margin-bottom]
+Bootstrap 的標題標籤、 p 標籤預設有 margin-bottom，如果同學不喜歡這個預設的 margin-bottom 的話，
+可以搜尋  $headings-margin-bottom 和 $paragraph-margin-bottom 來修改設定將預設的 margin-bottom 移除。
+*/
+/*
+[修改字型]
+引入外部字型後，在 _variables.scss 搜尋關鍵字 scss-docs-start font-variables，
+可以直接跳到改字型的地方 $font-family-sans-serif 。
+
+在最前方加入設計稿的文字 Yeseva One 和 Noto Sans TC 以及 Noto Serif TC。
+如果是中間有空格的字型，都建議使用單引號來包住字型名稱唷。
+*/
+/*
+
+[修改文字大小]
+搜尋 $font-sizes 可以來到調整間距的地方。📏 
+
+同學可以先觀察設計稿使用了那些文字大小，來調整這邊的設定。
+*/
+/*$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+) !default;*/
+/*
+[移除標題標籤或 p 標籤預設的 margin-bottom]
+Bootstrap 的標題標籤、 p 標籤預設有 margin-bottom，如果同學不喜歡這個預設的 margin-bottom 的話，
+可以搜尋  $headings-margin-bottom 和 $paragraph-margin-bottom 來修改設定將預設的 margin-bottom 移除。
+*/
+.noto-tc-serif {
+  font-family: "Noto Serif TC" !important;
+}
+
+.noto-tc-sans {
+  font-family: "Noto Sans TC" !important;
+}
+
+/*.btn-custom-hex {
+    @include button-variant(#69F0AE, #69F0AE)
+}
+
+.btn-outline-hex {
+    @include button-outline-variant(#69F0AE);
+}
+
+.btn-custom1-hex {
+    @include button-variant(#69F0AE, #69F0AE)
+}
+
+.btn-custom2-hex {
+    @include button-variant(#69F0AE, #69F0AE)
+}
+
+.btn-custom3-hex {
+    @include button-variant(#69F0AE, #69F0AE)
+}*/
+.btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #030303;
+  --bs-btn-hover-color: #FBFF22;
+  --bs-btn-hover-bg: #030303;
+}
+
+.page-link {
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom */
+.header {
+  background: #69F0AE;
+  font-size: 64px;
+}
+
+.footer {
+  background: #69F0AE;
+  font-size: 64px;
+}
+
+.index-title {
+  font-size: 100px;
+}
+
+.number {
+  border: 1px solid #000;
+  width: 32px;
+  height: 32px;
+  background-color: #f3f1e5;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .number {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
+.number-active {
+  background-color: #000;
+  color: #FBFF22;
+}
+
+.pay-list::before {
+  content: "";
+  width: 83%;
+  height: 1px;
+  background-color: black;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 30%;
+  position: absolute;
+  z-index: 1;
+}/*# sourceMappingURL=all.css.map */

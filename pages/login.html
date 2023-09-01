@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>會員登入頁 - W6 活動訂票網</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container">
+      <h3>會員登入</h3>
+      <form action="">
+        <div class="mb-3">
+          <label for="exampleFormControlInputAccount" class="form-label">帳號</label>
+          <input type="text" class="form-control" id="exampleFormControlInputAccount" placeholder="請輸入帳號">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInputPassword" class="form-label">密碼</label>
+          <input type="password" class="form-control" id="exampleFormControlInputPassword" placeholder="請輸入密碼">
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button">登入</button>
+        </div>
+        
+      </form>
+     
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+   
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>結帳頁 - W6 活動訂票網</title>
+
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled pe-0 position-relative">
+              <li class="d-flex flex-column align-items-center">
+                <p class="number d-flex justify-content-center align-items-center number-active mb-0">1</p>
+                <p class="fw-bold mb-0">訂單確認</p>
+              </li>
+              <li class="d-flex flex-column align-items-center">
+                <p class="number d-flex justify-content-center align-items-center mb-0">2</p>
+                <p class="fw-bold mb-0">結帳付款</p>
+              </li>
+              <li class="d-flex flex-column align-items-center">
+                <p class="number d-flex justify-content-center align-items-center mb-0">3</p>
+                <p class="fw-bold mb-0">訂單結果</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-a">
+        <h2>返老還童-制服聯誼</h2>
+      </div>
+
+      <div class="container">
+        <h3>聯絡人資料</h3>
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInputName" class="form-label">聯絡人姓名</label>
+            <input type="text" class="form-control" id="exampleFormControlInputName" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInputEmail" class="form-label">Email</label>
+            <input type="text" class="form-control" id="exampleFormControlInputEmail" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInputPhone" class="form-label">手機</label>
+            <input type="text" class="form-control" id="exampleFormControlInputPhone" placeholder="">
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">確認表單資料</button>
+            <button class="btn btn-primary" type="button">取消購票</button>
+          </div>
+          
+        </form>
+       
+      </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,13 @@
+// 因為設計稿中只有一個地方用到分頁，所以可以直接覆蓋沒關係
+// 如果分頁有很多種造型的話，就需要另外寫 class 來加上樣式囉~
+.page-link {
+    // 寬高最小值
+    min-width: 40px;
+    min-height: 40px;
+  
+    // 水平置中、垂直置中內層元素
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
