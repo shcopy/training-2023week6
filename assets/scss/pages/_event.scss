@@ -1,0 +1,51 @@
+/**/
+.event-list {
+    .card-img {
+      img {
+      object-fit: cover;
+      height: 255px;
+    }
+  }
+}
+
+.event-detail {
+  h2 {
+    margin: 0px;
+    font-size: 22px;
+  }
+
+  .date {
+    padding: 14px 24px;
+  }
+
+  .time::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%) rotate(120deg);
+    background-color: black;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      margin-bottom: 126px;
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 32px;
+    }
+
+    .date {
+      padding: 48px 44px;
+    }
+
+    .time::before {
+      width: 100px;
+      height: 2px;
+      top: 50%;
+    }
+  }
+}

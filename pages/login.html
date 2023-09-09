@@ -8,23 +8,30 @@
   <body>
     <%- include('./layout/header'); -%>
 
+
     <div class="container">
-      <h3>會員登入</h3>
-      <form action="">
-        <div class="mb-3">
-          <label for="exampleFormControlInputAccount" class="form-label">帳號</label>
-          <input type="text" class="form-control" id="exampleFormControlInputAccount" placeholder="請輸入帳號">
+      <div class="row">
+        <div class="col-md-5 mx-auto mb-24">
+          <div class="text-center">
+            <img src="../assets/images/sparkler.png" alt="sparkler" width="32" class="">
+            <h2 class="noto-tc-serif fs-21 fw-bold pb-16">會員登入</h2>
+          </div>
+          <form action="">
+            <div class="mb-8">
+              <label for="exampleFormControlInputAccount" class="form-label">帳號</label>
+              <input type="text" class="form-control" id="exampleFormControlInputAccount" placeholder="請輸入帳號">
+            </div>
+            <div class="mb-8">
+              <label for="exampleFormControlInputPassword" class="form-label">密碼</label>
+              <input type="password" class="form-control" id="exampleFormControlInputPassword" placeholder="請輸入密碼">
+            </div>
+            
+            <div class="d-grid gap-2 mx-auto">
+              <button class="btn btn-primary btn-lg" type="button">登入 &raquo;</button>
+            </div>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInputPassword" class="form-label">密碼</label>
-          <input type="password" class="form-control" id="exampleFormControlInputPassword" placeholder="請輸入密碼">
-        </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-primary" type="button">登入</button>
-        </div>
-        
-      </form>
-     
+      </div>
     </div>
 
     <%- include('./layout/footer'); -%>

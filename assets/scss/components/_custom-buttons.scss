@@ -1,35 +1,18 @@
-/*.btn-custom-hex {
+ /* .btn-custom-hex {
     @include button-variant(#69F0AE, #69F0AE)
 }
 
 .btn-outline-hex {
     @include button-outline-variant(#69F0AE);
-}
+} */
 
-.btn-custom1-hex {
-    @include button-variant(#69F0AE, #69F0AE)
-}
-
-.btn-custom2-hex {
-    @include button-variant(#69F0AE, #69F0AE)
-}
-
-.btn-custom3-hex {
-    @include button-variant(#69F0AE, #69F0AE)
-}*/
-
-
-.btn-bd-primary {
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: #ffffff; // var(--bs-white);
-    --bs-btn-bg: #030303; // var(--bd-violet-bg);
-    // --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: #FBFF22;// var(--bs-white);
-    --bs-btn-hover-bg: #030303;// #{shade-color($bd-violet, 10%)};
-    // --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
-    // --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    // --bs-btn-active-color: var(--bs-btn-hover-color);
-    // --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
-    // --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .open>.dropdown-toggle.btn-primary {
+      color: #FBFF22 !important;
+      // background-color: #00b3db !important;
+      // border-color: #285e8e !important;
+      /*set the color you want here*/
   }
-

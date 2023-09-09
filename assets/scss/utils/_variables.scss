@@ -305,6 +305,8 @@ $primary:      #030303 !default; // *custom
 //$secondary:     $gray-600 !default;
 $secondary:    #fbff22 !default; // *custom
 
+$tertiary:    #C96464 !default; // *custom
+
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -317,6 +319,7 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "tertiary":   $tertiary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -352,6 +355,7 @@ Bootstrap 的元件樣式預設帶有圓角，由於第六週設計稿的樣式�
 */
 // $enable-rounded:              true !default;
 $enable-rounded:              false !default; // *custom
+
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
@@ -407,8 +411,8 @@ $spacers: (
 
 // 記得也要先複製一份初始設定，註解掉後再開始寫新設定喔!
 // scss-docs-start spacer-variables-maps
-$spacer: 1rem !default;
-$spacers: (
+//$spacer: 1rem !default;
+/*$spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
@@ -422,6 +426,83 @@ $spacers: (
   10: $spacer * 2.5,
   11: $spacer * 3,
   12: $spacer * 3.75,
+
+
+  // ...
+) !default;*/
+$spacer: 1rem !default;
+$spacers: (
+   0: $spacer * 0,     //   0px
+   1: $spacer * 0.125, //   2px
+   2: $spacer * 0.25,  //   4px
+   3: $spacer * 0.375, //   6px
+   4: $spacer * 0.5,   //   8px
+   5: $spacer * 0.625, //  10px
+   6: $spacer * 0.75,  //  12px
+   7: $spacer * 0.875, //  14px
+   8: $spacer * 1,     //  16px
+   9: $spacer * 1.125, //  18px
+  10: $spacer * 1.25,  //  20px
+  11: $spacer * 1.375, //  22px
+  12: $spacer * 1.5,   //  24px
+  13: $spacer * 1.625, //  26px
+  14: $spacer * 1.75,  //  28px
+  15: $spacer * 1.875, //  30px
+  16: $spacer * 2,     //  32px
+  17: $spacer * 2.125, //  34px
+  18: $spacer * 2.25,  //  36px
+  19: $spacer * 2.375, //  38px
+  20: $spacer * 2.5,   //  40px
+  21: $spacer * 2.625, //  42px
+  22: $spacer * 2.75,  //  44px
+  23: $spacer * 2.875, //  46px
+  24: $spacer * 3,     //  48px
+  25: $spacer * 3.125, //  50px
+  26: $spacer * 3.25,  //  52px
+  27: $spacer * 3.375, //  54px
+  28: $spacer * 3.5,   //  56px
+  29: $spacer * 3.625, //  58px
+  30: $spacer * 3.75,  //  60px
+  31: $spacer * 3.875, //  62px
+  32: $spacer * 4,     //  64px
+  33: $spacer * 4.125, //  66px
+  34: $spacer * 4.25,  //  68px
+  35: $spacer * 4.375, //  70px
+  36: $spacer * 4.5,   //  72px
+  37: $spacer * 4.625, //  74px
+  38: $spacer * 4.75,  //  76px
+  39: $spacer * 4.875, //  78px
+  40: $spacer * 5,     //  80px
+  41: $spacer * 5.125, //  82px
+  42: $spacer * 5.25,  //  84px
+  43: $spacer * 5.375, //  86px
+  44: $spacer * 5.5,   //  88px
+  45: $spacer * 5.625, //  90px
+  46: $spacer * 5.75,  //  92px
+  47: $spacer * 5.875, //  94px
+  48: $spacer * 6,     //  96px
+  49: $spacer * 6.125, //  98px
+  50: $spacer * 6.25,   // 100px
+  51: $spacer * 6.375, // 102px
+  52: $spacer * 6.5,   // 104px
+  53: $spacer * 6.625, // 106px
+  54: $spacer * 6.75,  // 108px
+  55: $spacer * 6.875, // 110px
+  56: $spacer * 7,     // 112px
+  57: $spacer * 7.125, // 114px
+  58: $spacer * 7.25,  // 116px
+  59: $spacer * 7.375, // 118px
+  60: $spacer * 7.5,   // 120px
+  61: $spacer * 7.625, // 122px
+  62: $spacer * 7.75,  // 124px
+  63: $spacer * 7.875, // 126px
+  64: $spacer * 8,     // 128px
+  65: $spacer * 8.125, // 130px
+  66: $spacer * 8.25,  // 132px
+  67: $spacer * 8.375, // 134px
+  68: $spacer * 8.5,   // 136px
+  69: $spacer * 8.625, // 138px
+  70: $spacer * 8.75,  // 140px
 
   // ...
 ) !default;
@@ -450,10 +531,11 @@ Bootstrap 的變數檔案，也有可以修改網站 body 整體背景色的地�
 還有可以修改文字的基本顏色的地方~
 */
 // $body-bg:                   $white !default;
-$body-bg:                 #f3f1e5 !default; // *custom
+$body-bg:                    #f3f1e5 !default; // *custom
 
 // $body-color:                $gray-900 !default;
-$body-color: #030303 !default; // *custom
+$body-color:                 #030303 !default; // *custom
+
 $body-text-align:           null !default;
 
 // Links
@@ -461,16 +543,19 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
+// $link-color:                                 #9C9E18 !default; // *custom
 
 /*
 [移除 a 連結底線]
 設計稿中的 a 連結也是幾乎沒有底線的，所以我們也可以移除底線。
 */
-//$link-decoration:                         underline !default;
+// $link-decoration:                         underline !default;
 $link-decoration:                         none !default; // *custom
 
 $link-shade-percentage:                   20% !default;
+
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -659,7 +744,7 @@ $h6-font-size:                $font-size-base !default;
 /*
 
 [修改文字大小]
-搜尋 $font-sizes 可以來到調整間距的地方。📏 
+搜尋 $font-sizes 可以來到調整間距的地方。 
 
 同學可以先觀察設計稿使用了那些文字大小，來調整這邊的設定。
 */
@@ -700,7 +785,7 @@ $font-sizes: (
   24: $font-size-base * 1.125, // 18px
   25: $font-size-base * 1,     // 16px
   26: $font-size-base * 0.875, // 14px
-  27: $font-size-base * 0.75,  // 12px
+  27: $font-size-base * 0.75  // 12px
 
   // ...
 
@@ -903,8 +988,8 @@ $btn-disabled-opacity:        .65 !default;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
 
 $btn-link-color:              var(--#{$prefix}link-color) !default;
-$btn-link-hover-color:        var(--#{$prefix}link-hover-color) !default;
-$btn-link-disabled-color:     $gray-600 !default;
+$btn-link-hover-color:        #FBFF22 !default;//var(--#{$prefix}link-hover-color) !default;
+$btn-link-disabled-color:     #EBEAE3 !default;// $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;
@@ -969,9 +1054,18 @@ $input-disabled-color:                  null !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
-$input-color:                           $body-color !default;
-$input-border-color:                    $gray-400 !default;
-$input-border-width:                    $input-btn-border-width !default;
+/* [input 文字顏色] */
+//$input-color:                           $body-color !default;
+$input-color:                           #030303 !default;  // *custom
+
+/* [input border 顏色] */
+//$input-border-color:                    $gray-400 !default;
+$input-border-color:                    #030303 !default; // *custom
+
+/*[input border 寬度]*/
+//$input-border-width:                    $input-btn-border-width !default;
+$input-border-width:                    2px !default;  // *custom
+
 $input-box-shadow:                      $box-shadow-inset !default;
 
 $input-border-radius:                   $border-radius !default;
@@ -980,11 +1074,17 @@ $input-border-radius-lg:                $border-radius-lg !default;
 
 $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              tint-color($component-active-bg, 50%) !default;
-$input-focus-color:                     $input-color !default;
+
+// $input-focus-color:                     $input-color !default;
+$input-focus-color:                     #000000 !default;  // *custom
+
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               $gray-600 !default;
+/* [input 提示文字 顏色] */
+// $input-placeholder-color:               $gray-600 !default;
+$input-placeholder-color:               #878787 !default; // *custom
+
 $input-plaintext-color:                 $body-color !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
@@ -1022,7 +1122,6 @@ $form-check-input-bg:                     $input-bg !default;
 // $form-check-input-border:                 1px solid rgba($black, .25) !default;
 // 色碼 #030303 有設定為變數的話，也可以改為套用變數
 $form-check-input-border: 1px solid #030303 !default; // *custom
-
 
 $form-check-input-border-radius:          .25em !default;
 $form-check-radio-border-radius:          50% !default;
@@ -1430,8 +1529,8 @@ $card-spacer-y:                     $spacer !default;
 [.card-body、.card-footer 的左右間距]
 Bootstrap 的卡片內容， .card-body 預設左右邊有留白。
 */
-// $card-spacer-x:                     0 !default; // *custom
-$card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     0 !default; 
+//$card-spacer-x:                     $spacer !default; // *custom
 
 /*
 [.card-title 的 margin-bottom]
@@ -1441,7 +1540,15 @@ $card-spacer-x:                     $spacer !default;
 // $card-title-spacer-y:               $spacer * .5 !default;
 $card-title-spacer-y:               $spacer * 0.75 !default;  // *custom
 
-$card-border-width:                 $border-width !default;
+/*
+[.card-border 的 width]
+卡片標題樣式 .card-border 有預設的 width ，控制的變數為  $border-width ，
+只要調整這邊的數值，就可以改變 .card-border 的 border 的數值囉。
+因設計稿中的 card-border 為0px, 因此這邊參數設定為0px。
+*/
+// $card-border-width:                 $border-width !default;
+$card-border-width:                 0px !default; // $border-width !default;  // *custom
+
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius:                $border-radius !default;
 $card-box-shadow:                   null !default;
