@@ -5,36 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>結帳完成頁 - W6 活動訂票網</title>
 
-    <script type="module" crossorigin src="/training-2023week6/assets/main-965f23c1.js"></script>
-    <link rel="stylesheet" href="/training-2023week6/assets/main-f68b9db3.css">
+    <script type="module" crossorigin src="/training-2023week6/assets/main-3f9b6c63.js"></script>
+    <link rel="stylesheet" href="/training-2023week6/assets/main-c971fce4.css">
   </head>
   <body>
-    <!-- <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a> -->
+    <div class="border-3 border-bottom border-primary mb-16">
+    <div class="container py-12 align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Start of LOGO -->
+                <div class="d-flex justify-content-start align-items-center me-24">
+                    <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo" width="53" class=""/>
+                    <span class="d-none d-lg-inline fs-17 align-middle ms-8">7TAO</span>
+                    <span class="d-lg-inline fs-25 align-middle ms-4 d-none">活動訂票網</span>
+                    </a>
+                </div>
+                <!-- End of LOGO -->
+                
+                <!-- Start of Search bar-->
+                <form class="form-inline">   
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInputSearch" aria-label="探索活動" aria-describedby="探索活動" placeholder="探索活動">
+                        <button type="search" class="btn btn-primary"><i class="icofont-search-1 text-secondary fs-25"></i></button>
+                    </div>
+                </form> 
+                <!-- End of Search bar-->
+            </div>
+
+            <nav class="container py-12 d-flex align-items-center justify-content-end">
+            <div class="hamburger">
+                <a class="d-flex align-items-center px-12 py-1 border border-dark rounded h-100" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+                <span class="material-symbols-outlined">menu</span>
+                </a>
+            </div>
+            </nav>
+
+            <div class="collapse" id="collapseExample">
+                <!-- Start of NavBar-->
+                <ul class="list-unstyled d-flex">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="icofont-ui-file me-2"></i>REGISTER</a></li>
+                    <li class="nav-item ms-12"><a class="nav-link" href="#"><i class="icofont-ui-user me-2"></i>LOGIN</a></li>
+                </ul> 
+                <!-- End of NavBar-->
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+
+
     <div class="container">
         <div class="row">
           <div class="col-md-6 mx-auto">
             <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled pe-0 position-relative">
               <li class="d-flex flex-column align-items-center">
                 <p class="number d-flex justify-content-center align-items-center mb-0">1</p>
-                <p class="fw-bold mb-0">訂單確認</p>
+                <p class="noto-tc-serif  fw-bold mb-0">訂單確認</p>
               </li>
               <li class="d-flex flex-column align-items-center">
                 <p class="number d-flex justify-content-center align-items-center mb-0">2</p>
-                <p class="fw-bold mb-0">結帳付款</p>
+                <p class="noto-tc-serif  fw-bold mb-0">結帳付款</p>
               </li>
               <li class="d-flex flex-column align-items-center">
                 <p class="number d-flex justify-content-center align-items-center number-active mb-0">3</p>
-                <p class="fw-bold mb-0">訂單結果</p>
+                <p class="noto-tc-serif  fw-bold mb-0">訂單結果</p>
               </li>
             </ol>
           </div>
         </div>
       </div>
 
-    <!-- <footer class="footer">我是 footer</footer> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto mb-24">
+            <div class="text-center mt-24">
+              <i class="icofont-check-circled fs-9"></i>
+              <h2 class="noto-tc-serif fs-17 fw-bold pb-16">訂購成功</h2>
+            </div>
+
+                <table class="table">
+                  <thead>
+                      <tr style="border-bottom: 2px solid #030303;">
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="border-bottom-1 border-dark">
+                          <td class="text-start"><span class="noto-tc-serif fs-25 fw-bold">訂單編號</span></td>
+                          <td class="text-end"><span class="noto-tc-sans fs-25">892746123</span></td>
+                      </tr>
+                      <tr class="border-bottom-1 border-dark">
+                          <td class="text-start"><span class="noto-tc-serif fs-25 fw-bold">訂購時間</span></td>
+                          <td class="text-end"><span class="noto-tc-sans fs-25">2023/04/28 14:30</span></td>
+                      </tr>
+                      <tr class="border-bottom-1 border-dark">
+                          <td class="text-start"><span class="noto-tc-serif fs-25 fw-bold">票券</span></td>
+                          <td class="text-end"><span class="noto-tc-sans fs-25">改頭換面票（含大改造）$8000</span></td>
+                      </tr>
+
+                      <tr class="border-bottom-1 border-dark">
+                          <td class="text-start"><span class="noto-tc-serif fs-25 fw-bold">取票序號</span></td>
+                          <td class="text-end"><span class="noto-tc-sans fs-25 text-tertiary">95G54J4434</span></td>
+                      </tr>
+                      
+                      <tr class="border-bottom-1 border-dark">
+                          <td class="text-start"><span class="noto-tc-serif fs-25 fw-bold">取票號碼</span></td>
+                          <td class="text-end"><span class="noto-tc-sans fs-25 text-tertiary">04597101</span></td>
+                      </tr>                      
+                  </tbody>
+              </table>
+            <div class="mt-8">
+              <p class="noto-tc-sans">請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br>
+                若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>
+                若需退票，請按照退票辦法進行申請。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <div class="border-3 border-top border-primary">
+    <div class="container align-items-center text-center">
+        <p class="py-16">© 7TAO七逃. All Rights Reserved</p>
+    </div>
+</div>
     
 
   </body>

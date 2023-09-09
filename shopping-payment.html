@@ -5,36 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>付款頁 - W6 活動訂票網</title>
 
-    <script type="module" crossorigin src="/training-2023week6/assets/main-965f23c1.js"></script>
-    <link rel="stylesheet" href="/training-2023week6/assets/main-f68b9db3.css">
+    <script type="module" crossorigin src="/training-2023week6/assets/main-3f9b6c63.js"></script>
+    <link rel="stylesheet" href="/training-2023week6/assets/main-c971fce4.css">
   </head>
   <body>
-    <!-- <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a> -->
+    <div class="border-3 border-bottom border-primary mb-16">
+    <div class="container py-12 align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Start of LOGO -->
+                <div class="d-flex justify-content-start align-items-center me-24">
+                    <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo" width="53" class=""/>
+                    <span class="d-none d-lg-inline fs-17 align-middle ms-8">7TAO</span>
+                    <span class="d-lg-inline fs-25 align-middle ms-4 d-none">活動訂票網</span>
+                    </a>
+                </div>
+                <!-- End of LOGO -->
+                
+                <!-- Start of Search bar-->
+                <form class="form-inline">   
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInputSearch" aria-label="探索活動" aria-describedby="探索活動" placeholder="探索活動">
+                        <button type="search" class="btn btn-primary"><i class="icofont-search-1 text-secondary fs-25"></i></button>
+                    </div>
+                </form> 
+                <!-- End of Search bar-->
+            </div>
+
+            <nav class="container py-12 d-flex align-items-center justify-content-end">
+            <div class="hamburger">
+                <a class="d-flex align-items-center px-12 py-1 border border-dark rounded h-100" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+                <span class="material-symbols-outlined">menu</span>
+                </a>
+            </div>
+            </nav>
+
+            <div class="collapse" id="collapseExample">
+                <!-- Start of NavBar-->
+                <ul class="list-unstyled d-flex">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="icofont-ui-file me-2"></i>REGISTER</a></li>
+                    <li class="nav-item ms-12"><a class="nav-link" href="#"><i class="icofont-ui-user me-2"></i>LOGIN</a></li>
+                </ul> 
+                <!-- End of NavBar-->
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+
+
     <div class="container">
         <div class="row">
           <div class="col-md-6 mx-auto">
             <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled pe-0 position-relative">
               <li class="d-flex flex-column align-items-center">
                 <p class="number d-flex justify-content-center align-items-center mb-0">1</p>
-                <p class="fw-bold mb-0">訂單確認</p>
+                <p class="noto-tc-serif fw-bold mb-0">訂單確認</p>
               </li>
               <li class="d-flex flex-column align-items-center">
                 <p class="number d-flex justify-content-center align-items-center number-active  mb-0">2</p>
-                <p class="fw-bold mb-0">結帳付款</p>
+                <p class="noto-tc-serif fw-bold mb-0">結帳付款</p>
               </li>
               <li class="d-flex flex-column align-items-center">
                 <p class="number d-flex justify-content-center align-items-center mb-0">3</p>
-                <p class="fw-bold mb-0">訂單結果</p>
+                <p class="noto-tc-serif fw-bold mb-0">訂單結果</p>
               </li>
             </ol>
           </div>
         </div>
       </div>
 
-    <!-- <footer class="footer">我是 footer</footer> -->
+      <div class="container">
+        <h2 class="noto-tc-serif fs-9 fw-bold text-center pb-16">返老還童-制服聯誼</h2>
+        <div class="text-center">
+           <span class="bg-dark text-secondary lh-base noto-tc-sans text-center">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</span>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mx-auto mb-24">
+            <table class="table">
+              <thead>
+                  <tr style="border-bottom: 2px solid #030303;">
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="border-top-3 border-bottom-1 border-dark">
+                      <td class="text-start"><span class="noto-tc-serif fs-25 fw-bold">訂單編號 </span></td>
+                      <td class="text-end"><span class="noto-tc-sans fs-25">892746123</span></td>
+                  </tr>
+                  <tr class="border-bottom-1 border-dark">
+                      <td class="text-start"><span class="noto-tc-serif fs-25 fw-bold">票價</span></td>
+                      <td class="text-end"><span class="noto-tc-sans fs-25">改頭換面票（含大改造）$8000</span></td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+        </div> 
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto mb-24">
+            <div class="text-center">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler" width="32" class="">
+              <h2 class="noto-tc-serif fs-21 fw-bold pb-16">結帳資訊</h2>
+            </div>
+            <form action="">
+              <div class="mb-8">
+                <label for="exampleFormControlInputID" class="form-label">取票資訊</label>
+                <input type="text" class="form-control noto-tc-sans" id="exampleFormControlInputID" placeholder="請輸入身分證字號或護照號碼">
+                <div class="">請輸入您的 <span class="text-tertiary">身分證字號</span> 供取票使用，外籍人士請輸入 <span class="text-tertiary">護照號碼</span></div>
+              </div>
+              <div class="mb-16">
+                <label for="exampleFormControlInputPayment" class="form-label">付款方式</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="exampleFormControlInputPaymentCreditCard">
+                  <label class="form-check-label" for="exampleFormControlInputPaymentCreditCard">信用卡</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="exampleFormControlInputPaymentATM">
+                  <label class="form-check-label" for="exampleFormControlInputPaymentATM">ATM虛擬帳號</label>
+                </div>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary btn-lg" type="button">確認訂單並繳費 $8000 &raquo;</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <div class="border-3 border-top border-primary">
+    <div class="container align-items-center text-center">
+        <p class="py-16">© 7TAO七逃. All Rights Reserved</p>
+    </div>
+</div>
     
 
   </body>

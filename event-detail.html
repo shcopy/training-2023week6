@@ -4,29 +4,209 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>單一活動詳細頁 - W6 活動訂票網</title>
-    <script type="module" crossorigin src="/training-2023week6/assets/main-965f23c1.js"></script>
-    <link rel="stylesheet" href="/training-2023week6/assets/main-f68b9db3.css">
+    <script type="module" crossorigin src="/training-2023week6/assets/main-3f9b6c63.js"></script>
+    <link rel="stylesheet" href="/training-2023week6/assets/main-c971fce4.css">
   </head>
   <body>
-    <!-- <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a> -->
-    <div class="container">
-      <!-- start of swiper -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
-          <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
-          <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
-          <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
-          <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+    <div class="border-3 border-bottom border-primary mb-16">
+    <div class="container py-12 align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Start of LOGO -->
+                <div class="d-flex justify-content-start align-items-center me-24">
+                    <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo" width="53" class=""/>
+                    <span class="d-none d-lg-inline fs-17 align-middle ms-8">7TAO</span>
+                    <span class="d-lg-inline fs-25 align-middle ms-4 d-none">活動訂票網</span>
+                    </a>
+                </div>
+                <!-- End of LOGO -->
+                
+                <!-- Start of Search bar-->
+                <form class="form-inline">   
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInputSearch" aria-label="探索活動" aria-describedby="探索活動" placeholder="探索活動">
+                        <button type="search" class="btn btn-primary"><i class="icofont-search-1 text-secondary fs-25"></i></button>
+                    </div>
+                </form> 
+                <!-- End of Search bar-->
+            </div>
+
+            <nav class="container py-12 d-flex align-items-center justify-content-end">
+            <div class="hamburger">
+                <a class="d-flex align-items-center px-12 py-1 border border-dark rounded h-100" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+                <span class="material-symbols-outlined">menu</span>
+                </a>
+            </div>
+            </nav>
+
+            <div class="collapse" id="collapseExample">
+                <!-- Start of NavBar-->
+                <ul class="list-unstyled d-flex">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="icofont-ui-file me-2"></i>REGISTER</a></li>
+                    <li class="nav-item ms-12"><a class="nav-link" href="#"><i class="icofont-ui-user me-2"></i>LOGIN</a></li>
+                </ul> 
+                <!-- End of NavBar-->
+            </div>
+           
         </div>
+    </div>
+</div>
+
+
+
+
+    <div class="container">
+      <div class="event-detai">
+      <div class="d-column d-md-flex">
+                <div class="border border-3 border-dark p-8 p-md-12 mb-4 ">
+                  <img src="/training-2023week6/assets/09-496f8f1c.jpg" width="100%" alt="">
+                </div> 
+                    <div class="d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start">
+
+                        <!-- Start of Year -->
+                        <div class="date border border-3 border-dark position-relative px-8 py-12 px-md-20 py-md-16">             
+                          <span class="text-center fs-21 fs-md-9">2023</span>
+                        </div>
+                        <!-- End of Year -->
+
+                        <!-- Start of Month & Day -->
+                        <div class="col-8 col-md-8 mx-auto">
+
+                              <!--
+                              手機版本顯示方向為 <從左到右 → > flex-row
+                              PC 版本顯示方向為 <從上到下 ↓ >  flex-column  flex-lg-column
+                              -->
+                              <div class="date d-flex flex-md-column flex-row align-items-center justify-content-between border border-3 border-dark position-relative px-12 py-7 px-md-22 py-md-24">
+                                <!-- Start of 月&日-->
+                                <div class="d-flex flex-column align-items-center">
+                                  <h2 class="text-center">
+                                    MAY
+                                    <br>
+                                    19
+                                  </h2>
+                                </div>
+                                <!-- End of 月&日-->
+
+                                <!-- Start of time-->
+                                <div class="time d-flex flex-column justify-content-center align-items-center">
+                                  <p class="mb-0 lh-1">12:00</p>
+                                  <p class="mb-0 lh-1">|</p>
+                                  <p class="mb-0 lh-1">20:00</p>
+                                </div>
+                                <!-- End of time-->
+                              </div>
+                            </div>
+                        <!-- End of Month  &Day -->
+                      </div>
+                    
+              </div> 
+
+
       </div>
-    <!-- end of swiper -->
+
+
+         
     </div>
 
-    <!-- <footer class="footer">我是 footer</footer> -->
+<div class="container">
+  <h2 class="noto-tc-serif fs-17 fs-lg-3 fw-bold mb-4 mb-lg-8">返老還童-制服聯誼</h2>
+  <p class="mb-12">穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！</p>
+
+  <div class="tag">
+    <ul class="tag-list list-unstyled d-flex noto-tc-serif flex-wrap gap-2">
+      <li class="me-4">
+        <label>
+        <input type="checkbox" class="tag-checkbox">
+        <p class="tag-item btn btn-outline-dark py-2 px-8 px-lg-12 py-lg-2 rounded-0">
+        聯誼
+        </p>
+        </label>
+      </li>
+      <li class="me-4">
+        <label>
+        <input type="checkbox" class="tag-checkbox">
+        <p class="tag-item btn btn-outline-dark py-2 px-8 px-lg-12 py-lg-2 rounded-0">
+        美食
+        </p>
+        </label>
+      </li>
+      <li class="me-4">
+        <label>
+        <input type="checkbox" class="tag-checkbox">
+        <p class="tag-item btn btn-outline-dark py-2 px-8 px-lg-12 py-lg-2 rounded-0">
+        戶外
+        </p>
+        </label>
+      </li>
+      <li class="me-4">
+        <label>
+        <input type="checkbox" class="tag-checkbox">
+        <p class="tag-item btn btn-outline-dark py-2 px-8 px-lg-12 py-lg-2 rounded-0">
+        交通旅遊
+        </p>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  <div class="container mb-12 mb-lg-24">
+    <div class="border border-3 border-dark px-8 py-8 px-lg-16 py-lg-16">
+      <p class="noto-tc-sans fw-normal fs-25 mb-8">想回到過去？試著讓故事繼續？</p>
+      <p class="noto-tc-sans fw-normal fs-25 mb-8">由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！</p>
+      <p class="noto-tc-sans fw-normal fs-25">活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶&lt;3</p>
+    </div>
+  </div>
+
+    <div class="container mb-4 mb-lg-0">
+      <!-- Text  -->
+      <div class="d-flex justify-content-between align-items-center border border-3 border-primary">
+          <h2 class="yeseva-one fs-21 fs-lg-1 fw-bold ms-6 ms-lg-16 py-8 py-lg-12">TICKET</h2>
+          <span class="noto-tc-serif fs-25 fs-lg-21 fw-bold me-6 me-lg-16">購票資訊</span>
+      </div>
+      <!-- Text  -->
+    </div>
+
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr style="border-bottom: 2px solid #030303;">
+            <th scope="col">活動日期</th>
+            <th scope="col">票種</th>
+            <th scope="col">票價</th>
+            <th scope="col" class="text-left">購票</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="noto-tc-sans fw-normal fs-26 fs-lg-25">2023/5/12</span></td>
+            <td><span class="noto-tc-sans fw-normal fs-26 fs-lg-25">普通票</span></td>
+            <td><span class="noto-tc-sans fw-normal fs-26 fs-lg-25">$600</span></td>
+            <td class="text-left"><button type="button" class="btn btn-outline-dark">立即購票</button></td>
+          </tr>
+          <tr>
+            <td><span class="noto-tc-sans  fw-normal fs-26 fs-lg-25">2023/5/12</span></td>
+            <td><span class="noto-tc-sans fw-normal fs-26 fs-lg-25">改頭換面票（含大改造）</span></td>
+            <td><span class="noto-tc-sans fw-normal fs-26 fs-lg-25">$3600</span></td>
+            <td class="text-left"><button type="button" class="btn btn-outline-dark">立即購票</button></td>
+          </tr>
+          <tr>
+            <td><span class="noto-tc-sans  fw-normal fs-26 fs-lg-25">2023/5/12</span></td>
+            <td><span class="noto-tc-sans fw-normal fs-26 fs-lg-25">必勝票（含戀愛小抄）</span></td>
+            <td><span class="noto-tc-sans fw-normal fs-26 fs-lg-25">$8000</span></td>
+            <td class="text-left"><button type="button" class="btn btn-outline-dark">立即購票</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="border-3 border-top border-primary">
+    <div class="container align-items-center text-center">
+        <p class="py-16">© 7TAO七逃. All Rights Reserved</p>
+    </div>
+</div>
     
    
   </body>
